@@ -47,14 +47,6 @@ def test_distance_ratio():
 
 	print(" -- -- Levenshtein distance ratio:", ratio)
 
-def test_distance_sentences():
-	"""Test comparing two passages tokenized at the sentence level"""
-	print("Testing distance ratio between two long passages by sentence")
-
-	t = TextReuse()
-	comparisons = t.compare_sentences(demo_verg, demo_prop, 'latin')
-
-	print(" -- -- Comparisons:", comparisons)
 
 def test_distance_sliding_window():
 	"""Test comparing two passages with the sliding window strategy"""
@@ -70,9 +62,6 @@ if __name__ == '__main__':
 
 	# distance ratio
 	test_distance_ratio()
-
-	# distance ratio by sentences
-	test_distance_sentences()
 
 	# distance sliding window
 	test_distance_sliding_window()
