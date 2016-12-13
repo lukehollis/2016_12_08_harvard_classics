@@ -55,6 +55,7 @@ def test_distance_sliding_window():
 	t = TextReuse()
 	comparisons = t.compare_sliding_window(demo_verg, demo_prop)
 
+	import pdb; pdb.set_trace()
 	print(" -- -- Comparisons:", comparisons)
 
 

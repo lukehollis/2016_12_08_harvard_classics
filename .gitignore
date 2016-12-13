@@ -3,3 +3,4 @@
 *.swo
 lib
 __pycache__
+cltk
