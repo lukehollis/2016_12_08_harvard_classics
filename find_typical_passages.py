@@ -102,7 +102,7 @@ def main():
 		print(' -- calculated similarity for', starting_line['book'] + '.' + starting_line['line'], '-', ending_line['book'] + '.' + ending_line['line'], 'at', sum(similarities))
 
 	# Sort results by similarity index
-	segments = sorted(segments, key = lambda x: x['similarity_index'])
+	segments = sorted(segments, key = lambda x: x['similarity_index'], reverse=True)
 	pdb.set_trace()
 
 
